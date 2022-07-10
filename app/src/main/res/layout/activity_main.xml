@@ -4,17 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="460dp"
+        android:layout_height="272dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/runner"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="416dp"
+        android:layout_height="336dp"
+        android:src="@drawable/wind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-50dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,6 +47,7 @@
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:backgroundTint="#393636"
+        android:onClick="openStart"
         android:text="PLAY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
